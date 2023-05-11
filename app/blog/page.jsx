@@ -1,17 +1,9 @@
 import { getBlogSlugs } from '@utils/getBlogSlugs';
 import Link from 'next/link';
 
-export const getStaticProps = async () => {
+const BlogPage = async () => {
   const slugs = await getBlogSlugs();
 
-  return {
-    props: {
-      slugs,
-    },
-  };
-};
-
-const BlogPage = ({ slugs }) => {
   return (
     <>
       <h1>BlogPage</h1>
