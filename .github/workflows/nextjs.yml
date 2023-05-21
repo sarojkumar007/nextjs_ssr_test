@@ -81,8 +81,8 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
-      - name: Add CNAME Record
-        run: echo "nextjs.sarojkumar.dev" > ./out/CNAME
+      #- name: Add CNAME Record
+      #  run: echo "nextjs.sarojkumar.dev" > ./out/CNAME
 
   # Deployment job
   deploy:
